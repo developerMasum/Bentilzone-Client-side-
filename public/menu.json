@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "name": "Special Chicken  Curry",
+    "title": "Special Chicken  Curry",
+    "photo": "https://i.ibb.co/n1grYhj/cu1.png",
+    "price":  20.00,
+    "Category": "Curry"
+  },
+  {
+    "id": 2,
+    "name": "Chicken Vegetable Curry",
+    "title": "Chicken Curry",
+    "photo": "https://i.ibb.co/pr2DkVK/cu2.png",
+    "price": 20,
+    "Category": "Curry"
+  },
+  {
+    "id": 3,
+    "name": "Spicy Prown",
+    "title": "Prown",
+    "photo": "https://i.ibb.co/9nfvrn4/cu3.png",
+    "price": 30,
+    "Category": "Curry"
+  },
+  {
+    "id": 4,
+    "name": "Butter Chicken",
+    "title": "Butter Chicken",
+    "photo": "https://i.ibb.co/89nsYXT/cu4.png",
+    "price": 40,
+    "Category": "Curry"
+  },
+  {
+    "id": 5,
+    "name": "Beef Rezala",
+    "title": "Beef Rezala",
+    "photo": "https://i.ibb.co/DCVgjpg/cu5.png",
+    "price": 50,
+    "Category": "Curry"
+  },
+  {
+    "id": 7,
+    "name": "Red Bull",
+    "title": "Energy Drink",
+    "photo": "https://i.ibb.co/CnP38Fj/d1.png",
+    "price": 17,
+    "Category": "Soft Drinks"
+  },
+  {
+    "id": 8,
+    "name": "Pepsi",
+    "title": "Chilled",
+    "photo": "https://i.ibb.co/Wn7BdrW/d2.png",
+    "price": 5,
+    "Category": "Soft Drinks"
+  },
+  {
+    "id": 9,
+    "name": "Monster Energy",
+    "title": "Energy Drink",
+    "photo": "https://i.ibb.co/Yfdp560/d3.png",
+    "price": 24,
+    "Category": "Soft Drinks"
+  },
+  {
+    "id": 10,
+    "name": "Cocktail",
+    "title": "Chilled Cocktail",
+    "photo": "https://i.ibb.co/jHh5Y0j/d4.png",
+    "price": 8.00,
+    "Category": "Soft Drinks"
+  },
+  {
+    "id": 11,
+    "name": "Sprite",
+    "title": "Chilled",
+    "photo": "https://i.ibb.co/VgLyT6Y/d5.png",
+    "price": 5.00,
+    "Category": "Soft Drinks"
+  },
+  {
+    "id": 12,
+    "name": "Fanta Orange",
+    "title": "Fanta Orange",
+    "photo": "https://i.ibb.co/QMrvwz4/d6.png",
+    "price": 5.00,
+    "Category": "Soft Drinks"
+  },
+  {
+    "id": 13,
+    "name": "Mango Shake",
+    "title": "Shake",
+    "photo": "https://i.ibb.co/vd6W2KD/d7.png",
+    "price": 11,
+    "Category": "Soft Drinks"
+  },
+  {
+    "id": 14,
+    "name": "Coca Cola",
+    "title": "Chilled",
+    "photo": "https://i.ibb.co/L9JhLSz/d8.png",
+    "price": 5.00,
+    "Category": "Soft Drinks"
+  },
+  {
+    "id": 15,
+    "name": "Strawberry",
+    "title": "Red Delicious",
+    "photo": "https://i.ibb.co/xGmY0TJ/f1.png",
+    "price": 150,
+    "Category": "Fruits"
+  },
+  {
+    "id": 16,
+    "name": "Pinneapple",
+    "title": "Yellow Pinneapple",
+    "photo": "https://i.ibb.co/Lxdvr6s/f2.png",
+    "price": 160,
+    "Category": "Fruits"
+  },
+  {
+    "id": 17,
+    "name": "Blueberries",
+    "title": "Blue Berries",
+    "photo": "https://i.ibb.co/QvrwFDm/f3.png",
+    "price": 170,
+    "Category": "Fruits"
+  },
+  {
+    "id": 18,
+    "name": "Concord grapes",
+    "title": " Original Grapes",
+    "photo": "https://i.ibb.co/z6fhMyJ/f4.png",
+    "price": 180,
+    "Category": "Fruits"
+  },
+  {
+    "id": 19,
+    "name": "Strawberry Hybrid",
+    "title": "Hybrid Flavour ",
+    "photo": "https://i.ibb.co/b5Nz6GQ/f5.png",
+    "price": 190,
+    "Category": "Fruits"
+  },
+  {
+    "id": 20,
+    "name": "Pomegranate",
+    "title": "Red and Juicy",
+    "photo": "https://i.ibb.co/pXHyS4V/f6.png",
+    "price": 200,
+    "Category": "Fruits"
+  },
+  {
+    "id": 21,
+    "name": "Raspberry",
+    "title": "Cascade Delight",
+    "photo": "https://i.ibb.co/Kj8b6cY/f7.png",
+    "price": 210,
+    "Category": "Fruits"
+  },
+  {
+    "id": 22,
+    "name": "Apple",
+    "title": "Red Delicious",
+    "photo": "https://i.ibb.co/8Mhp27r/f8.png",
+    "price": 220,
+    "Category": "Fruits"
+  },
+  {
+    "id": 23,
+    "name": "Banana",
+    "title": "Seasoned",
+    "photo": "https://i.ibb.co/cDf6JVx/f9.png",
+    "price": 230,
+    "Category": "Fruits"
+  },
+  {
+    "id": 24,
+    "name": "WaterLemon",
+    "title": "Fully Seasoned and Juicy",
+    "photo": "https://i.ibb.co/6YbL0nF/f10.png",
+    "price": 240,
+    "Category": "Fruits"
+  },
+  {
+    "id": 26,
+    "name": "Tilpia BBQ",
+    "title": "BBQ",
+    "photo": "https://i.ibb.co/CHMh1fY/fi2.png",
+    "price": 160,
+    "Category": "Fish"
+  },
+  {
+    "id": 27,
+    "name": "Grilled Grass Carp",
+    "title": "BBQ",
+    "photo": "https://i.ibb.co/GV2JWCm/fi3.png",
+    "price": 190,
+    "Category": "Fish"
+  },
+  {
+    "id": 28,
+    "name": "Steamed Silver Carp",
+    "title": "Steamed",
+    "photo": "https://i.ibb.co/SRpJCj4/fi4.png",
+    "price": 210,
+    "Category": "Fish"
+  },
+  {
+    "id": 29,
+    "name": "Salted Tuna",
+    "title": "Salted Tuna",
+    "photo": "https://i.ibb.co/cvKM86w/fi5.png",
+    "price": 65,
+    "Category": "Fish"
+  },
+  {
+    "id": 30,
+    "name": "Chocolate Icecream",
+    "title": "Chocolate and Strawberry",
+    "photo": "https://i.ibb.co/YtmVtSm/i1.png",
+    "price": 11.00,
+    "Category": "Icecreams"
+  },
+  {
+    "id": 31,
+    "name": "Coco Vanilla",
+    "title": "Chocolate and Vanilla",
+    "photo": "https://i.ibb.co/vdHR6Px/i2.png",
+    "price": 12.00,
+    "Category": "Icecreams"
+  },
+  {
+    "id": 32,
+    "name": "Chocolate ButterScotch",
+    "title": "Chocolate and ButterScotch",
+    "photo": "https://i.ibb.co/m8tTVKH/i3.png",
+    "price": 9.00,
+    "Category": "Icecreams"
+  },
+  {
+    "id": 33,
+    "name": "Harlequin Icecream",
+    "title": "Vanilla Chocolate Strawberry",
+    "photo": "https://i.ibb.co/3hp7BLb/i4.png",
+    "price": 24.99,
+    "Category": "Icecreams"
+  },
+  {
+    "id": 34,
+    "name": "Strawberry Ice Cream",
+    "title": "Strawberry",
+    "photo": "https://i.ibb.co/PD9thvK/i5.png",
+    "price": 12.50,
+    "Category": "Icecreams"
+  },
+  {
+    "id": 35,
+    "name": "Vanilla Moose",
+    "title": "Vanilla Icecreams",
+    "photo": "https://i.ibb.co/DCS5Q7d/i6.png",
+    "price": 5.00,
+    "Category": "Icecreams"
+  },
+  {
+    "id": 36,
+    "name": "Strawberry Icecream",
+    "title": "Strawberry and Vanilla",
+    "photo": "https://i.ibb.co/jkNCQYP/i7.png",
+    "price": 10.25,
+    "Category": "Icecreams"
+  },
+  {
+    "id": 37,
+    "name": "Shrimp Fried Rice",
+    "title": "Assorted Fried rice with shrimps",
+    "photo": "https://i.ibb.co/NmLWq5q/r1.png",
+    "price": 26.00,
+    "Category": "Rice"
+  },
+  {
+    "id": 38,
+    "name": "Lighter Fried Rice",
+    "title": "Fried Rice & Chicken",
+    "photo": "https://i.ibb.co/0CzMqP1/r2.png",
+    "price": 20,
+    "Category": "Rice"
+  },
+  {
+    "id": 39,
+    "name": "Chicken Fried Rice",
+    "title": "Fried Rice & Chicken",
+    "photo": "https://i.ibb.co/rG00fWr/r3.png",
+    "price": 16.99,
+    "Category": "Rice"
+  },
+  {
+    "id": 40,
+    "name": "Classic Pork Fried Rice",
+    "title": "Fried Rice and Pork",
+    "photo": "https://i.ibb.co/KVB7MRJ/r4.png",
+    "price": 30,
+    "Category": "Rice"
+  },
+  {
+    "id": 41,
+    "name": "Regular Fried Rice",
+    "title": "Fried Rice and Vegetables",
+    "photo": "https://i.ibb.co/StkWx5d/r5.png",
+    "price": 10.00,
+    "Category": "Rice"
+  },
+  {
+    "id": 42,
+    "name": "Chicken Manjoorion",
+    "title": "With Coca Cola",
+    "photo": "https://i.ibb.co/kSJCYfb/c1.png",
+    "price": 23,
+    "Category": "Chicken"
+  },
+  {
+    "id": 43,
+    "name": "Spicy Chicken Fry",
+    "title": "Chicken Fry",
+    "photo": "https://i.ibb.co/WDRy50X/c2.png",
+    "price": 25,
+    "Category": "Chicken"
+  },
+  {
+    "id": 44,
+    "name": "Chicken Kebab",
+    "title": "Chicken & Kebab",
+    "photo": "https://i.ibb.co/QQYDzQm/c3.png",
+    "price": 80.00,
+    "Category": "Chicken"
+  },
+  {
+    "id": 45,
+    "name": "Fried Chiken",
+    "title": "Broasted with Coke",
+    "photo": "https://i.ibb.co/XsH552M/c4.png",
+    "price": 20,
+    "Category": "Chicken"
+  },
+  {
+    "id": 46,
+    "name": "Chicken Kebab plate",
+    "title": "Grilled Chicken",
+    "photo": "https://i.ibb.co/2cDhhCm/c6.png",
+    "price": 75.99,
+    "Category": "Chicken"
+  },
+  {
+    "id": 47,
+    "name": "Broasted Chicken",
+    "title": "With potato fries",
+    "photo": "https://i.ibb.co/SVrhWcB/c7.png",
+    "price": 15.25,
+    "Category": "Chicken"
+    }
+  ]
