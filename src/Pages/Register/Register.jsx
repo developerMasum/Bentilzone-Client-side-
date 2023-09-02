@@ -31,7 +31,7 @@ const Register = () => {
       .then((result) => {
         console.log(result);
         // saveUser(result?.user);
-        saveUser(result.user)
+        saveUser(result.user);
         Swal.fire({
           position: "top-middle",
           icon: "success",
@@ -63,7 +63,7 @@ const Register = () => {
             email: data.email,
             photo: data.photoURL,
           };
-          fetch(`http://localhost:5000/users/${email}`, {
+          fetch(`https://bentilzone-server-side.vercel.app/users/${email}`, {
             method: "PUT",
             headers: {
               "content-type": "application/json",
@@ -98,7 +98,6 @@ const Register = () => {
           className="h-96 w-96"
           src="https://embed.lottiefiles.com/animation/107385"
         ></iframe>
-      
       </div>
       <form
         onSubmit={handleSubmit(onSubmit)}

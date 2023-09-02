@@ -13,7 +13,7 @@ const ItemPage = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:5000/menu")
+    fetch("https://bentilzone-server-side.vercel.app/menu")
       .then((res) => res.json())
       .then((data) => {
         if (category === "Menu") {

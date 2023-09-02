@@ -10,15 +10,13 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { useLoaderData } from "react-router-dom";
 import { toast } from "react-hot-toast";
 
-
-
 const ImgKey = "88a32f9606ac9f1f4bc4d022254b25e1";
 // console.log(ImgKey);
 
 const ManageItemField = () => {
-    const item = useLoaderData();
-    console.log(item);
-    const { name, price, title,_id } = item;
+  const item = useLoaderData();
+  console.log(item);
+  const { name, price, title, _id } = item;
 
   const { user } = useContext(AuthContext);
   const [axiosSecure] = useAxiosSecure();
@@ -49,7 +47,7 @@ const ManageItemField = () => {
             Category: category,
           };
           console.log(newItem);
-          fetch(`http://localhost:5000/item/${_id}`, {
+          fetch(`https://bentilzone-server-side.vercel.app/item/${_id}`, {
             method: "PUT",
             headers: {
               "content-type": "application/json",
@@ -59,7 +57,7 @@ const ManageItemField = () => {
             .then((res) => res.json())
             .then((data) => {
               console.log(data);
-              if (data.modifiedCount > 0 ) {
+              if (data.modifiedCount > 0) {
                 Swal.fire({
                   title: "Success!",
                   text: "Updated Successfully ",
@@ -71,7 +69,6 @@ const ManageItemField = () => {
         }
       });
   };
- 
 
   return (
     <div className="w-full px-10">
@@ -154,7 +151,7 @@ const ManageItemField = () => {
         {/* <input className="btn btn-warning btn-sm mt-4 mb-5 " type="submit" value="Add Item" /> */}
 
         <div className="flex justify-center w-full">
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.1 }}
             className="bg-gradient-to-br from-orange-400 to-orange-500 w-full md:w-full lg:w-full px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
           >

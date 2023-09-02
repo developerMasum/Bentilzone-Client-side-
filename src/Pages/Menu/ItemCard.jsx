@@ -1,19 +1,18 @@
 import React, { useContext, useState } from "react";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 import Swal from "sweetalert2";
-import "../../components/Menu/MenuCard.css"; 
+import "../../components/Menu/MenuCard.css";
 
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import useCart from "../../components/Hooks/useCart";
 import useAdmin from "../../components/Hooks/useAdmin";
 
-
 const ItemCard = ({ item }) => {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
   const [, refetch] = useCart();
-  const[isAdmin] = useAdmin();
+  const [isAdmin] = useAdmin();
 
   const { title, photo, name, price, _id } = item;
   const [isShaking, setIsShaking] = useState(false); // State variable to control the shake effect
@@ -51,7 +50,7 @@ const ItemCard = ({ item }) => {
         email: user?.email,
       };
       console.log(orderItem);
-      fetch("http://localhost:5000/carts", {
+      fetch("https://bentilzone-server-side.vercel.app/carts", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -84,16 +83,18 @@ const ItemCard = ({ item }) => {
         <div>
           <img src={photo} alt="" className="card-image hover:scale-125" />
         </div>
-        {
-        isAdmin ? ' ' :  <div>
-        <button
-          onClick={() => handleAddCart(item)}
-          className="bg-orange-300 px-3 py-3 rounded-full"
-        >
-          <MdOutlineAddShoppingCart className="cursor-pointer" />
-        </button>
-      </div>
-       }
+        {isAdmin ? (
+          " "
+        ) : (
+          <div>
+            <button
+              onClick={() => handleAddCart(item)}
+              className="bg-orange-300 px-3 py-3 rounded-full"
+            >
+              <MdOutlineAddShoppingCart className="cursor-pointer" />
+            </button>
+          </div>
+        )}
       </div>
       <div className="">
         <div className="w-full flex items-end justify-end flex-col pr-5 pb-5">

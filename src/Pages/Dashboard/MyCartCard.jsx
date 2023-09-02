@@ -2,41 +2,34 @@ import React from "react";
 import { MdDelete } from "react-icons/md";
 import Swal from "sweetalert2";
 
-
-const MyCartCard = ({ item,refetch }) => {
+const MyCartCard = ({ item, refetch }) => {
   console.log(item);
 
-
-
-const handleDelete=(item)=>{
+  const handleDelete = (item) => {
     Swal.fire({
-        title: "Are you sure?",
-        text: "You won't be able to revert this!",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, delete it!",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          fetch(`http://localhost:5000/carts/${item._id}`, {
-            method: "DELETE",
-          })
-            .then((res) => res.json())
-            .then((data) => {
-                console.log(data);
-              if (data.deletedCount > 0 ) {
-                Swal.fire("Deleted!", "Your file has been deleted.", "success");
-                refetch();
-              }
-            });
-        }
-      });
-    };
-
-
-
-
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        fetch(`https://bentilzone-server-side.vercel.app/carts/${item._id}`, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            if (data.deletedCount > 0) {
+              Swal.fire("Deleted!", "Your file has been deleted.", "success");
+              refetch();
+            }
+          });
+      }
+    });
+  };
 
   const { price, photo, name, _id } = item;
   return (
@@ -52,7 +45,10 @@ const handleDelete=(item)=>{
             <span className="text-xl  font-thin">{price}</span>
           </div>
           <div className="ml-5">
-            <button onClick={()=>handleDelete(item)} className="btn btn-circle btn-outline btn-sm bg-red-500">
+            <button
+              onClick={() => handleDelete(item)}
+              className="btn btn-circle btn-outline btn-sm bg-red-500"
+            >
               <MdDelete className="text-white" />
             </button>
           </div>

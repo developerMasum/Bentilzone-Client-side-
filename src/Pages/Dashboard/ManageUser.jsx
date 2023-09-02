@@ -11,7 +11,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 // import useAxiosSecure from "../../../hooks/useAxiosSecure";
 
 const ManageUser = () => {
-  const {user}= useContext(AuthContext);
+  const { user } = useContext(AuthContext);
   const [axiosSecure] = useAxiosSecure();
   const { data: users = [], refetch } = useQuery(["users"], async () => {
     const res = await axiosSecure.get("/users");
@@ -19,35 +19,38 @@ const ManageUser = () => {
     return res.data;
   });
 
-    // making a normal user to admin ---
-    const handleMakeAdmin = (singleUser) => {
-      fetch(`http://localhost:5000/users/admin/${singleUser._id}`, {
+  // making a normal user to admin ---
+  const handleMakeAdmin = (singleUser) => {
+    fetch(
+      `https://bentilzone-server-side.vercel.app/users/admin/${singleUser._id}`,
+      {
         method: "PATCH",
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          // console.log(data);
-          if (data.modifiedCount) {
-            refetch();
-            Swal.fire({
-              position: "center",
-              icon: "success",
-              title: `${user.name} is an Admin Now!`,
-              showConfirmButton: false,
-              timer: 1500,
-            });
-          }
-        });
-    };
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        // console.log(data);
+        if (data.modifiedCount) {
+          refetch();
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: `${user.name} is an Admin Now!`,
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        }
+      });
+  };
 
   const handleDelete = (user) => {
-  toast.success('if click here then user will be deleted')
-   //TODO: DELETE FUNCTION WILL BE HERE -
+    toast.success("if click here then user will be deleted");
+    //TODO: DELETE FUNCTION WILL BE HERE -
   };
 
   return (
     <div className="w-full">
-         <Helmet>
+      <Helmet>
         <title>Bentilzone Restaurant | Users</title>
       </Helmet>
       <div className="text-center">
@@ -78,16 +81,25 @@ const ManageUser = () => {
                 <td>{singleUser.name}</td>
                 <td>{singleUser.email}</td>
                 <td>
-                 
-                {  singleUser.role === "admin"? 'Admin' :  <button onClick={()=>handleMakeAdmin(singleUser)} className="btn btn-circle btn-outline btn-sm bg-green-500">
-                  <GrUserAdmin className="text-white " />
-                </button>}
+                  {singleUser.role === "admin" ? (
+                    "Admin"
+                  ) : (
+                    <button
+                      onClick={() => handleMakeAdmin(singleUser)}
+                      className="btn btn-circle btn-outline btn-sm bg-green-500"
+                    >
+                      <GrUserAdmin className="text-white " />
+                    </button>
+                  )}
                 </td>
 
                 <td>
                   {" "}
                   <button className="btn btn-circle btn-outline btn-sm bg-red-500">
-                    <MdDelete onClick={()=>handleDelete(singleUser)} className="text-white " />
+                    <MdDelete
+                      onClick={() => handleDelete(singleUser)}
+                      className="text-white "
+                    />
                   </button>
                 </td>
               </tr>

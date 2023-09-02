@@ -11,7 +11,7 @@ const MenuCard = ({ item }) => {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
   const [, refetch] = useCart();
-  const[isAdmin] = useAdmin();
+  const [isAdmin] = useAdmin();
 
   const { title, photo, name, price, _id } = item;
   const [isShaking, setIsShaking] = useState(false); // State variable to control the shake effect
@@ -49,7 +49,7 @@ const MenuCard = ({ item }) => {
         email: user?.email,
       };
       console.log(orderItem);
-      fetch("http://localhost:5000/carts", {
+      fetch("https://bentilzone-server-side.vercel.app/carts", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -82,16 +82,18 @@ const MenuCard = ({ item }) => {
         <div>
           <img src={photo} alt="" className="card-image hover:scale-125" />
         </div>
-       {
-        isAdmin ? ' ' :  <div>
-        <button
-          onClick={() => handleAddCart(item)}
-          className="bg-orange-300 px-3 py-3 rounded-full"
-        >
-          <MdOutlineAddShoppingCart className="cursor-pointer" />
-        </button>
-      </div>
-       }
+        {isAdmin ? (
+          " "
+        ) : (
+          <div>
+            <button
+              onClick={() => handleAddCart(item)}
+              className="bg-orange-300 px-3 py-3 rounded-full"
+            >
+              <MdOutlineAddShoppingCart className="cursor-pointer" />
+            </button>
+          </div>
+        )}
       </div>
       <div className="">
         <div className="w-full flex items-end justify-end flex-col pr-5 pb-5">
